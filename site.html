@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura de Streaming Esportivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <h1>Bem-vindo à SportCore</h1>
+        <button class="btn-cadastrar" id="btnCadastro">Cadastre-se</button>
+    </header>
+
+    <section>
+        <h2>Sobre Nós</h2>
+        <p>Na SportCore, somos líderes em transmissão ao vivo e gravada de esportes e e-sports. Nossa missão é oferecer uma plataforma intuitiva e acessível para os amantes do esporte, proporcionando uma experiência de streaming de alta qualidade.</p>
+    </section>
+    
+    <section>
+        <h2>Nosso Produto</h2>
+        <h3>SportFlix</h3>
+        <p>Oferecemos uma ampla variedade de conteúdos esportivos, incluindo transmissões ao vivo de campeonatos de futebol, basquete, e os mais emocionantes torneios de e-sports. Acesse nossos conteúdos de qualquer dispositivo, a qualquer hora.</p>
+    </section>
+    
+    <section>
+        <h2>Assine Agora e Ganhe 1 Semana VIP Grátis</h2>
+        <p>Aproveite uma semana gratuita de nossa plataforma de streaming e tenha acesso ilimitado a todos os nossos conteúdos esportivos. Cadastre-se agora e experimente a melhor plataforma de streaming esportivo!</p>
+        <button class="btn-cadastrar" id="btnCadastroBot">Cadastre-se</button>
+    </section>
+    <section>
+        <section id="assinatura">
+            <div class="basico">
+                <h2>Básico</h2>
+                <p>Descrição do pacote básico.</p>
+                <p>R$ 19,90/mês</p>
+                <button class="btn-cadastrar" id="assinar1">Assinar</button>
+            </div>
+            <div class="premiun">
+                <h2>Premium</h2>
+                <p>Descrição do pacote premium.</p>
+                <p>R$ 39,90/mês</p>
+                <button class="btn-cadastrar" id="assinar2">Assinar</button>
+            </div>
+            <div class="vip">
+                <h2>VIP</h2>
+                <p>Descrição do pacote VIP.</p>
+                <p>R$ 59,90/mês</p>
+                <button class="btn-cadastrar" id="assinar3">Assinar</button>
+            </secton>
+    </section>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastre-se para ganhar 1 semana de assinatura VIP gratuita</h2>
+            <form id="form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="niver">Data de Nascimento:</label>
+                <input type="date" id="niver" name="niver" required>
+                
+                <label for="gen">Gênero:</label>
+                <select id="gen" name="gen" required>
+                    <option value="">Selecione...</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                    <option value="nao-informar">Prefiro não informar</option>
+                </select>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="confirmacaoIdade">
+                    <input type="checkbox" id="confirmacaoIdade" name="confirmacaoIdade" required>
+                    Confirmo que sou maior de 18 anos
+                </label>
+                
+                <button type="enviar">Enviar</button>
+            </form>
+            <div id="obrigado" class="hidden">
+                <p>Obrigado por se inscrever! Estamos redirecionando você para o WhatsApp...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
